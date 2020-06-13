@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "videoapp-3b4b8": {
+      "hosting": {
+        "doc-webapp": [
+          "videoapp-3b4b8"
+        ]
+      }
+    }
+  }
+}

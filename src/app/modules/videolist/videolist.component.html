@@ -1,0 +1,16 @@
+<mat-list>
+    <h2 matSubheader>Video List</h2>
+  <mat-list-item *ngFor="let video of videoList">
+    <img matListAvatar src={{video.doc_image}} alt="...">
+    <a mat-list-item >Title : {{video.doc_title}}</a>
+    <a mat-list-item >Score : {{video.doc_score}}</a>
+    <a mat-list-item >Category : {{video.doc_cat}}</a>
+    <button mat-icon-button>
+        <mat-icon  (click)="onDelete(video)">delete</mat-icon>
+    </button>
+    <button mat-icon-button>
+        <mat-icon  (click)="onEdit(video)">edit</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
+

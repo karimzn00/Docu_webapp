@@ -1,0 +1,37 @@
+<header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h1 class="font-weight-light">Watch For FREE !</h1>
+          <p class="lead">subscribe to get NEW Documentries</p>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- Page Content -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="font-weight-light">Latest Documentaries</h2>
+
+        <div class="row row-cols-5 row-cols-md-3">
+          <div class="" *ngFor="let video of videoList">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{{video.doc_image}}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{video.doc_title}}</h5>
+                <p class="card-text">{{video.doc_cat}}</p>
+                <a href="#" class="btn btn-primary" href="/video/{{video.$id}}">Watch Now</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+  
+    </section>
+  
